@@ -5,9 +5,11 @@ const sendBtn = document.getElementById("send-btn");
 const keywords = [
     { words: ["what is stimulus", "stimulus"], reply: "Stimulus is a consulting startup helping businesses grow." },
     { words: ["register", "signup"], reply: "You can register here: <a href='https://stimulus.org.in' target='_blank'>Registration Page</a>" },
-    { words: ["contact", "email", "phone"], reply: "Email us at <a href='mailto:founder@stimulus.org.in'>founder@stimulus.org.in</a>" },
-    { words: ["services", "offer"], reply: "We offer business consulting, recruitment, and advisory services." },
-    { words: ["location", "where"], reply: "We are based in India." }
+    { words: ["contact", "email", "phone"], reply: "Email us at <a href='mailto:founder@stimulus.org.in'>founder@stimulus.org.in</a>,  more details <a target='_blank' href='https://stimulus.org.in/contact'>here </a>" },
+    { words: ["services", "offer"], reply: "We offer Business Consulting, Job recruitment, and business advisory services. More specifics <a target='_blank' href='https://stimulus.org.in/services'>here</a>" },
+    { words: ["location", "where"], reply: "We are based in India." },
+    { words: ["leadership", "founder"], reply: "Ms. Anusha K, Founder of Stimulus, is a dynamic business leader driven by a vision to help businesses grow through the right strategy and talent. Learn more about Stimulus <a target='_blank' href='https://stimulus.org.in/about'>here</a>" },
+    { words: ["why"], reply: "With over 500 clients served, Stimulus takes a holistic approach to business strategy, achieving a 95% success rate and earning a stellar 4.9/5 client rating." }
 ];
 
 function addMessage(message, sender, isTemporary = false) {
